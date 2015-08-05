@@ -1,0 +1,13 @@
+array (
+  'goods' => 
+  array (
+    'num' => '1',
+    'goods_id' => '84',
+    'product_id' => '536',
+  ),
+  'mini_cart' => 'true',
+  0 => 'goods',
+  1 => '84',
+  2 => '536',
+  3 => '1',
+)

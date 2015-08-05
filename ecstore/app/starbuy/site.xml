@@ -1,0 +1,26 @@
+<site>
+
+    <module controller='site_special' >
+        <name>special</name>
+        <title>组合促销</title>
+        <disable>false</disable>
+        <allow_menu act='index'>组合促销列表页</allow_menu>
+        <default_menu>
+            <title>团购</title>
+            <act>index</act>
+            <params id="type_id">1</params>
+            <display_order>2</display_order>
+            <hidden>false</hidden>
+        </default_menu>
+    </module>
+
+    <module controller='site_team' >
+        <name>team</name>
+        <title>组合促销详细页</title>
+        <disable>false</disable>
+        <allow_seo act="index">
+            <title>组合促销详细页</title>
+            <hidden>true</hidden>
+        </allow_seo>
+    </module>
+</site>

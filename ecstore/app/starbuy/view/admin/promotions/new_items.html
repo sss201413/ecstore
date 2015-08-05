@@ -1,0 +1,12 @@
+<{capture name="listBody"}>
+<div>
+    <{$item.spec_info}>&nbsp;&nbsp;&nbsp;&nbsp;<{t}>销售原价：<{/t}><{$item.price|cur_odr}>&nbsp;&nbsp;&nbsp;&nbsp;<{t}>促销价：<{/t}>
+    <{if $item.extend}>
+    <{input name="newprice[{$id}]" value=$item.extend type="positive" required="true" style="width:50px;text-align:right" }>&nbsp;&nbsp;
+    <{else}>
+    <{input name="newprice[{$id}]" value=$item.price type="positive" required="true" style="width:50px;text-align:right" }>&nbsp;&nbsp;
+    <{/if}>
+    &nbsp;&nbsp;<{t}>现有库存：<{/t}><{$item.store-$item.freez}>
+    <input type="hidden" name="oldprice[<{$id}>]" value="<{$item.price}>" >
+</div>
+<{/capture}>

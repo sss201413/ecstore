@@ -1,0 +1,10 @@
+<desktop>
+	<workground name="商品活动" id="test_admin_test" controller="admin_test" action="index" order="10">
+		<menugroup name="商品活动">
+			<menu controller="admin_test" action="index" permission="test_manage" display="true" order="1010">商品活动</menu>
+		</menugroup>
+	</workground>
+	<permissions>
+		<permission id="test_manage" display="true">商品活动</permission>
+	</permissions>
+</desktop>

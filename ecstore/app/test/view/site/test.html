@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>限时促销</title>
+</head>
+<body>
+	<h1 align="center">品牌列表</h1>
+	<table cellpadding="0" cellspacing="0" border="1" width="500px;" align="center" >
+		<tr>
+			<td>编号</td><td>图片</td><td>品牌名</td><td>点击了解</td><td>活动类型</td>
+		</tr>
+		<{foreach from=$brandlist item=item}>
+		<tr>
+			<td><{$item.brand_id}></td>
+			<td><img src="<{$item.brand_logo}>" /></td>
+			<td><{$item.brand_name}></td>
+			<td><a href="<{link app=test ctl=site_test act=goods arg0=$item.brand_id}>">了解详情</a></td>
+			<td>活动类型</td>
+		</tr>
+		<{/foreach}>
+	</table>
+</body>
+</html>
